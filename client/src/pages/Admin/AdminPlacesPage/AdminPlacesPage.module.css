@@ -1,0 +1,66 @@
+.page {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.title {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.actions {
+    margin-bottom: 20px;
+}
+
+.updateButton {
+    margin-right: 10px;
+    padding: 10px 18px;
+    border-radius: 10px;
+    border: none;
+    background: #ffffff;
+    color: #1e6bd6;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.updateButton:hover {
+    background: #1559b8;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.table th {
+    text-align: left;
+    padding: 14px 16px;
+    background: #f5f7fb;
+    font-size: 13px;
+    font-weight: 600;
+    color: #555;
+}
+
+.table td {
+    padding: 14px 16px;
+    border-top: 1px solid #eee;
+}
+
+.row {
+    cursor: pointer;
+}
+
+.row:hover {
+    background: #f0f4ff;
+}

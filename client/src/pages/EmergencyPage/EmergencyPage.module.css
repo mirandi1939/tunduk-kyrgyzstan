@@ -1,0 +1,78 @@
+.page { max-width: 860px; margin: 0 auto; padding: 0 24px 60px; }
+.banner {
+    background: linear-gradient(135deg, #7f1d1d, #991b1b);
+    margin: 0 -24px 32px;
+    padding: 48px 24px;
+}
+.bannerInner { max-width: 860px; margin: 0 auto; }
+.bannerTitle { font-family: 'Playfair Display', serif; font-size: 2rem; color: #fff; margin: 0 0 10px; }
+.bannerSub { color: rgba(255,255,255,0.75); margin: 0; font-size: 0.97rem; }
+.quickNumbers {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 10px;
+    margin-bottom: 36px;
+}
+.numberCard {
+    background: var(--surface);
+    border: 2px solid #FEE2E2;
+    border-radius: 10px;
+    padding: 14px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+.numberLabel { font-size: 0.72rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; }
+.number { font-size: 1.1rem; color: var(--danger); font-weight: 700; }
+.error { color: var(--danger); }
+.protocols { display: flex; flex-direction: column; gap: 10px; }
+.card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    overflow: hidden;
+    box-shadow: var(--shadow);
+}
+.cardOpen { border-color: var(--danger); }
+.cardHeader {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 16px 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+    transition: background 0.12s;
+}
+.cardHeader:hover { background: #FEF9F0; }
+.catIcon { font-size: 1.4rem; flex-shrink: 0; }
+.cardMeta { flex: 1; }
+.cardMeta strong { display: block; font-size: 0.97rem; color: var(--text); }
+.cardMeta span { font-size: 0.8rem; color: var(--text-muted); text-transform: capitalize; }
+.phoneChip {
+    background: #FEE2E2;
+    color: var(--danger);
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    white-space: nowrap;
+}
+.chevron { font-size: 0.75rem; color: var(--text-muted); }
+.cardBody { padding: 8px 20px 20px 20px; border-top: 1px solid var(--border); }
+.desc { font-size: 0.9rem; color: var(--text-muted); margin: 0 0 16px; }
+.cardBody h4 { font-size: 0.9rem; font-weight: 700; color: var(--primary); margin: 0 0 10px; }
+.steps { margin: 0; padding-left: 20px; display: flex; flex-direction: column; gap: 8px; }
+.step { font-size: 0.9rem; color: var(--text); line-height: 1.5; }
+.footer {
+    margin-top: 36px;
+    background: #FEF9F0;
+    border: 1px solid #FED7AA;
+    border-radius: 10px;
+    padding: 16px 20px;
+    font-size: 0.88rem;
+    color: var(--warning);
+}
+.footer p { margin: 0; }

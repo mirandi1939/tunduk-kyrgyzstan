@@ -1,0 +1,40 @@
+.card {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+
+    background: white;
+    border-radius: 18px;
+    overflow: hidden;
+
+    box-shadow: 5px 8px 22px rgba(0, 0, 0, 0.15);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.12);
+}
+
+.image {
+    height: 180px;
+    background-size: cover;
+    background-position: center;
+}
+
+.content {
+    padding: 16px 18px 20px;
+}
+
+.meta {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    opacity: 0.85;
+}
+
+.location {
+    margin-top: 6px;
+    font-size: 13px;
+    color: #555;
+}

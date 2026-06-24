@@ -1,0 +1,237 @@
+.page { }
+.overline {
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 14px;
+}
+
+/* ── Hero ── */
+.hero {
+  background: var(--primary-dark);
+  background-image:
+    radial-gradient(ellipse at 70% 50%, rgba(36,81,160,0.35) 0%, transparent 60%),
+    radial-gradient(ellipse at 10% 80%, rgba(45,106,79,0.2) 0%, transparent 50%);
+  color: #fff;
+}
+.heroInner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 100px 48px 64px;
+}
+.heroTitle {
+  font-size: clamp(3rem, 7vw, 5.5rem);
+  font-weight: 800;
+  color: #fff;
+  line-height: 1.05;
+  margin-bottom: 28px;
+}
+.heroTitle em {
+  font-style: italic;
+  color: var(--accent-light);
+}
+.heroSub {
+  font-size: 1.1rem;
+  color: rgba(255,255,255,0.7);
+  max-width: 520px;
+  line-height: 1.75;
+  margin-bottom: 40px;
+}
+.heroCtas { display: flex; gap: 14px; flex-wrap: wrap; }
+.ctaPrimary {
+  background: var(--accent);
+  color: #fff;
+  padding: 15px 36px;
+  border-radius: var(--radius);
+  font-weight: 700;
+  font-size: 0.95rem;
+  letter-spacing: 0.02em;
+  transition: background 0.15s, transform 0.15s;
+}
+.ctaPrimary:hover { background: #b07a20; transform: translateY(-2px); }
+.ctaSecondary {
+  background: transparent;
+  border: 1.5px solid rgba(255,255,255,0.35);
+  color: rgba(255,255,255,0.88);
+  padding: 15px 36px;
+  border-radius: var(--radius);
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: border-color 0.15s, background 0.15s;
+}
+.ctaSecondary:hover { border-color: rgba(255,255,255,0.7); background: rgba(255,255,255,0.06); }
+
+.heroStats {
+  border-top: 1px solid rgba(255,255,255,0.1);
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 48px;
+  display: flex;
+  align-items: stretch;
+}
+.stat {
+  flex: 1;
+  padding: 28px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.statNum {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: var(--accent-light);
+  line-height: 1;
+}
+.statLabel {
+  font-size: 0.76rem;
+  color: rgba(255,255,255,0.5);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+.statDivider {
+  width: 1px;
+  background: rgba(255,255,255,0.1);
+  margin: 20px 0;
+}
+
+/* ── Features ── */
+.features { background: var(--bg); padding: 96px 0; }
+.featuresInner { max-width: 1100px; margin: 0 auto; padding: 0 48px; }
+.featuresHead { margin-bottom: 56px; }
+.featuresTitle {
+  font-size: clamp(2rem, 4vw, 3rem);
+  color: var(--primary);
+  margin-bottom: 14px;
+}
+.featuresSub { font-size: 1rem; color: var(--text-muted); max-width: 480px; line-height: 1.7; }
+
+.grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2px; }
+
+.card {
+  background: var(--surface);
+  padding: 36px 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border: 1px solid var(--border);
+  transition: background 0.15s;
+  position: relative;
+}
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 3px;
+  background: var(--primary);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.2s;
+}
+.card:hover { background: #FAFAF8; }
+.card:hover::before { transform: scaleX(1); }
+.cardWomen::before { background: var(--women); }
+.cardEmergency::before { background: var(--danger); }
+
+.cardTop { display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px; }
+.cardLabel {
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  color: var(--accent);
+}
+.cardTitle {
+  font-size: 1.3rem;
+  color: var(--primary);
+  font-weight: 700;
+}
+.cardDesc { font-size: 0.875rem; color: var(--text-muted); line-height: 1.65; flex: 1; }
+.cardArrow { font-size: 0.82rem; font-weight: 700; color: var(--accent); margin-top: 8px; }
+
+/* ── Mission ── */
+.mission { background: var(--primary); padding: 96px 0; }
+.missionInner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 48px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: start;
+}
+.missionText .overline { color: rgba(245,200,118,0.8); }
+.missionTitle {
+  font-size: clamp(1.8rem, 3.5vw, 2.8rem);
+  color: #fff;
+  margin-bottom: 24px;
+}
+.missionBody {
+  font-size: 0.97rem;
+  color: rgba(255,255,255,0.68);
+  line-height: 1.8;
+  margin-bottom: 16px;
+}
+.missionPoints { display: flex; flex-direction: column; gap: 12px; padding-top: 8px; }
+.missionPoint {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  padding: 14px 18px;
+  background: rgba(255,255,255,0.06);
+  border-left: 3px solid var(--accent);
+  font-size: 0.9rem;
+  color: rgba(255,255,255,0.85);
+  line-height: 1.5;
+}
+.missionCheck { color: var(--accent-light); font-weight: 800; flex-shrink: 0; }
+
+/* ── CTA Section ── */
+.ctaSection {
+  background: var(--bg);
+  border-top: 1px solid var(--border);
+  padding: 80px 48px;
+  text-align: center;
+}
+.ctaTitle {
+  font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+  color: var(--primary);
+  margin-bottom: 32px;
+}
+.ctaBtns { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+.ctaBtnPrimary {
+  background: var(--primary);
+  color: #fff;
+  padding: 15px 36px;
+  border-radius: var(--radius);
+  font-weight: 700;
+  font-size: 0.95rem;
+  transition: background 0.15s;
+}
+.ctaBtnPrimary:hover { background: var(--primary-light); }
+.ctaBtnWomen {
+  background: var(--women-light);
+  color: var(--women);
+  border: 1.5px solid var(--women);
+  padding: 15px 36px;
+  border-radius: var(--radius);
+  font-weight: 700;
+  font-size: 0.95rem;
+  transition: background 0.15s;
+}
+.ctaBtnWomen:hover { background: #EDD9FF; }
+
+@media (max-width: 900px) {
+  .heroInner { padding: 64px 24px 40px; }
+  .heroStats { padding: 0 24px; }
+  .featuresInner, .missionInner, .ctaSection { padding-left: 24px; padding-right: 24px; }
+  .grid { grid-template-columns: 1fr 1fr; }
+  .missionInner { grid-template-columns: 1fr; gap: 40px; }
+}
+@media (max-width: 600px) {
+  .grid { grid-template-columns: 1fr; }
+  .heroStats { flex-wrap: wrap; }
+  .stat { min-width: 50%; }
+  .statDivider { display: none; }
+}

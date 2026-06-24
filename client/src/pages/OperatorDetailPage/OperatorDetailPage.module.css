@@ -1,0 +1,90 @@
+.page { max-width: 960px; margin: 0 auto; padding: 40px 24px 60px; }
+.state { padding: 80px 24px; text-align: center; color: var(--text-muted); }
+.back {
+    background: none; border: 1px solid var(--border); color: var(--text-muted);
+    padding: 8px 16px; border-radius: 8px; font-size: 0.87rem; margin-bottom: 28px;
+    cursor: pointer; transition: background 0.15s;
+}
+.back:hover { background: var(--bg); }
+.hero {
+    background: var(--primary);
+    border-radius: var(--radius);
+    padding: 36px;
+    margin-bottom: 32px;
+}
+.badges { display: flex; gap: 8px; margin-bottom: 12px; flex-wrap: wrap; }
+.verified {
+    background: rgba(134,239,172,0.2);
+    border: 1px solid rgba(134,239,172,0.4);
+    color: #86EFAC;
+    padding: 4px 12px;
+    border-radius: 12px;
+    font-size: 0.78rem;
+    font-weight: 600;
+}
+.womenBadge {
+    background: rgba(216,180,254,0.2);
+    border: 1px solid rgba(216,180,254,0.4);
+    color: #D8B4FE;
+    padding: 4px 12px;
+    border-radius: 12px;
+    font-size: 0.78rem;
+    font-weight: 600;
+}
+.name { font-family: 'Playfair Display', serif; font-size: 2rem; color: #fff; margin: 0 0 6px; }
+.specialty { color: rgba(255,255,255,0.68); font-size: 0.95rem; margin: 0 0 12px; }
+.rating { font-size: 0.9rem; color: rgba(255,255,255,0.8); font-weight: 600; }
+.rating span { font-weight: 400; }
+.body { display: grid; grid-template-columns: 1fr 300px; gap: 28px; }
+.main h2 { font-family: 'Playfair Display', serif; font-size: 1.2rem; color: var(--primary); margin: 0 0 10px; }
+.desc { color: var(--text-muted); line-height: 1.7; font-size: 0.95rem; margin: 0 0 24px; }
+.langs { display: flex; gap: 8px; flex-wrap: wrap; }
+.lang {
+    background: #EFF6FF;
+    color: var(--primary);
+    padding: 5px 14px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+.sidebar { display: flex; flex-direction: column; gap: 16px; }
+.contactCard {
+    background: var(--surface);
+    border-radius: var(--radius);
+    padding: 22px;
+    box-shadow: var(--shadow);
+    border: 1px solid var(--border);
+}
+.contactCard h3 { font-size: 1rem; font-weight: 700; color: var(--primary); margin: 0 0 16px; }
+.contactItem { display: flex; flex-direction: column; gap: 2px; margin-bottom: 12px; }
+.contactItem span { font-size: 0.78rem; color: var(--text-muted); }
+.contactItem a { color: var(--primary); font-weight: 600; font-size: 0.9rem; word-break: break-all; }
+.whatsappBtn {
+    display: block;
+    background: #25D366;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-top: 8px;
+    transition: background 0.15s;
+}
+.whatsappBtn:hover { background: #1da851; }
+.infoBox {
+    background: var(--surface);
+    border-radius: var(--radius);
+    padding: 18px 22px;
+    box-shadow: var(--shadow);
+    border: 1px solid var(--border);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.infoRow { display: flex; justify-content: space-between; font-size: 0.87rem; }
+.infoRow span { color: var(--text-muted); }
+.infoRow strong { color: var(--text); }
+@media (max-width: 700px) {
+    .body { grid-template-columns: 1fr; }
+}

@@ -1,0 +1,110 @@
+.page { max-width: 1100px; margin: 0 auto; padding: 72px 48px 80px; }
+.state { padding: 80px 48px; text-align: center; color: var(--text-muted); }
+.overline {
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 12px;
+}
+.pageHead { margin-bottom: 64px; border-bottom: 1px solid var(--border); padding-bottom: 40px; }
+.pageTitle {
+  font-size: clamp(2.4rem, 5vw, 3.8rem);
+  color: var(--primary);
+  margin-bottom: 16px;
+}
+.pageSub { font-size: 1rem; color: var(--primary); max-width: 520px; line-height: 1.75; }
+
+.list { display: flex; flex-direction: column; gap: 0; }
+
+.card {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  border: 1px solid var(--border);
+  border-bottom: none;
+  background: var(--surface);
+  transition: background 0.15s;
+}
+.card:last-child { border-bottom: 1px solid var(--border); }
+.card:hover { background: #FAFAF8; }
+
+.cardEven .cardLeft { background: var(--primary); }
+.cardOdd .cardLeft { background: #0d2447; }
+
+.cardLeft {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 48px 24px;
+  gap: 4px;
+  border-right: 1px solid rgba(255,255,255,0.1);
+}
+.bigNum {
+  font-family: 'Playfair Display', serif;
+  font-size: 5rem;
+  font-weight: 800;
+  color: var(--accent-light);
+  line-height: 1;
+}
+.bigNumLabel {
+  font-size: 0.75rem;
+  color: rgba(255,255,255,0.5);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 16px;
+}
+.womenPill {
+  background: rgba(123,63,160,0.25);
+  border: 1px solid rgba(216,180,254,0.4);
+  color: #D8B4FE;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.cardRight { padding: 40px 44px 40px 44px; display: flex; flex-direction: column; gap: 14px; }
+.cardMeta { display: flex; align-items: center; gap: 18px; flex-wrap: wrap; }
+.difficulty { font-size: 0.83rem; font-weight: 700; }
+.season { font-size: 0.83rem; color: var(--text-muted); }
+.price { font-size: 0.95rem; font-weight: 800; color: var(--accent); margin-left: auto; }
+.cardTitle {
+  font-size: 1.9rem;
+  color: var(--primary);
+}
+.cardDesc { font-size: 0.93rem; color: var(--text-muted); line-height: 1.7; }
+.highlights { display: flex; flex-wrap: wrap; gap: 8px; }
+.highlight {
+  background: #EFF6FF;
+  color: var(--primary);
+  padding: 5px 12px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  border-radius: var(--radius);
+}
+.btn {
+  display: inline-block;
+  align-self: flex-start;
+  margin-top: 6px;
+  background: var(--primary);
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: var(--radius);
+  font-size: 0.88rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  transition: background 0.15s;
+}
+.btn:hover { background: var(--primary-light); }
+
+@media (max-width: 700px) {
+  .page { padding: 40px 20px 60px; }
+  .card { grid-template-columns: 1fr; }
+  .cardLeft { flex-direction: row; padding: 20px 24px; border-right: none; border-bottom: 1px solid rgba(255,255,255,0.1); }
+  .bigNum { font-size: 3rem; }
+  .bigNumLabel { margin-bottom: 0; margin-left: 4px; align-self: flex-end; padding-bottom: 4px; }
+  .cardRight { padding: 24px; }
+}

@@ -1,0 +1,70 @@
+.page {
+    max-width: 700px;
+    margin: 40px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 16px;
+}
+
+.title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.help {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.help a {
+    color: #1e6bd6;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.input,
+.textarea,
+.select {
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+}
+
+.textarea {
+    min-height: 100px;
+}
+
+.actions {
+    display: flex;
+    gap: 12px;
+    margin-top: 10px;
+}
+
+.button {
+    padding: 12px 18px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    background: #1e6bd6;
+    color: white;
+}
+
+.button[type="button"] {
+    background: #aaa;
+}
+
+.error {
+    color: #c0392b;
+    font-size: 14px;
+}

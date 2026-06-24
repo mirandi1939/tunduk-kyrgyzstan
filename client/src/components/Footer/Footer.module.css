@@ -1,0 +1,52 @@
+.footer {
+    width: 100%;
+    background: linear-gradient(to top, rgba(71, 92, 36, 0.64) 80%, rgba(103, 180, 255, 0) 100%);
+    padding: 8px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    box-sizing: border-box;
+    height: 100px;
+    color: white;
+}
+
+.logo {
+    height: 150%;
+}
+
+.socials {
+    display: flex;
+    gap: 20px;
+}
+
+.icon {
+    width: 26px;
+    height: 26px;
+    display: flex;
+    cursor: pointer;
+}
+
+.icon svg {
+    width: 100%;
+    height: 100%;
+    fill: white;
+}
+
+.icon:hover svg {
+    opacity: 0.7;
+}
+
+@media (max-width: 600px) {
+    .footer {
+        padding: 14px 16px;
+    }
+
+    .logo {
+        font-size: 16px;
+    }
+
+    .icon {
+        width: 22px;
+        height: 22px;
+    }
+}

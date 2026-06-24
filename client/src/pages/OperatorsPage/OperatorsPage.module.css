@@ -1,0 +1,64 @@
+.page { max-width: 1100px; margin: 0 auto; padding: 48px 24px; }
+.header { margin-bottom: 32px; }
+.title { font-family: 'Playfair Display', serif; font-size: 2rem; color: var(--primary); margin: 0 0 8px; }
+.sub { color: var(--text-muted); margin: 0; }
+.filters { margin-bottom: 28px; }
+.filterBtn {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    color: var(--text-muted);
+    padding: 8px 18px;
+    border-radius: 20px;
+    font-size: 0.87rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.15s;
+}
+.filterActive {
+    background: var(--women-light);
+    border-color: var(--women);
+    color: var(--women);
+}
+.error { color: var(--danger); }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 20px; }
+.card {
+    background: var(--surface);
+    border-radius: var(--radius);
+    padding: 24px;
+    box-shadow: var(--shadow);
+    border: 1px solid var(--border);
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    transition: transform 0.15s, box-shadow 0.15s;
+}
+.card:hover { transform: translateY(-2px); box-shadow: var(--shadow-md); }
+.cardTop { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; }
+.name { font-size: 1.05rem; font-weight: 700; color: var(--primary); margin: 0 0 4px; }
+.specialty { font-size: 0.82rem; color: var(--text-muted); }
+.badges { display: flex; flex-direction: column; gap: 4px; align-items: flex-end; }
+.verified {
+    background: #ECFDF5;
+    color: var(--success);
+    padding: 3px 10px;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    white-space: nowrap;
+}
+.womenBadge { font-size: 1.1rem; }
+.rating { font-size: 0.92rem; font-weight: 600; color: var(--text); }
+.rating span { font-weight: 400; color: var(--text-muted); }
+.desc { font-size: 0.87rem; color: var(--text-muted); line-height: 1.6; margin: 0; flex: 1; }
+.footer { display: flex; justify-content: space-between; align-items: center; }
+.langs { display: flex; gap: 6px; flex-wrap: wrap; }
+.lang {
+    background: #EFF6FF;
+    color: var(--primary);
+    padding: 2px 8px;
+    border-radius: 6px;
+    font-size: 0.75rem;
+    font-weight: 500;
+}
+.region { font-size: 0.82rem; color: var(--text-muted); }
