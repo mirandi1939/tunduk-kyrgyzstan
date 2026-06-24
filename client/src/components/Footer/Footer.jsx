@@ -3,7 +3,7 @@ import styles from "./Footer.module.css";
 export default function Footer() {
     return (
         <footer className={styles.footer}>
-            <img className={styles.logo} src="./images/logo.png"></img>
+            <img className={styles.logo} src="./images/logo.png" alt="Tunduk logo"></img>
             <p>Tunduk 2026. All rights reserved</p>
 
             <div className={styles.socials}>
