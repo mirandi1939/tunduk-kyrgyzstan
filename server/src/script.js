@@ -1,7 +1,9 @@
 import axios from "axios";
+import dotenv from "dotenv";
 import db from "./db/db.js";
 
-const API_KEY = "AIzaSyChGyOnh3URpVonmVs0qo-vhqn1hQ5ahjU";
+dotenv.config();
+const API_KEY = process.env.GOOGLE_MAPS_API_KEY_SERVER;
 
 const PLACE_IDS = [
     "ChIJPSdKjhegj0cRIp5rM91QL94",
