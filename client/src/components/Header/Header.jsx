@@ -29,6 +29,7 @@ const Header = () => {
                     <NavLink to="/guesthouses" className={lc} onClick={close}>Guesthouses</NavLink>
                     <NavLink to="/forum" className={lc} onClick={close}>Forum</NavLink>
                     <NavLink to="/food" className={lc} onClick={close}>Food Guide</NavLink>
+                    <NavLink to="/events" className={lc} onClick={close}>Events 2026</NavLink>
                     <NavLink to="/emergency" onClick={close}
                         className={({ isActive }) => `${styles.link} ${styles.linkEmergency}${isActive ? " " + styles.active : ""}`}>
                         Emergency

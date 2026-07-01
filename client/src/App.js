@@ -10,6 +10,7 @@ import ForumPage from "./pages/ForumPage/ForumPage";
 import EmergencyPage from "./pages/EmergencyPage/EmergencyPage";
 import WomensCornerPage from "./pages/WomensCornerPage/WomensCornerPage";
 import FoodPage from "./pages/FoodPage/FoodPage";
+import EventsPage from "./pages/EventsPage/EventsPage";
 import HikingMapPage from "./pages/HikingMapPage/HikingMapPage";
 import AdminLoginPage from "./pages/Admin/LoginPage/LoginPage";
 import AdminPlacesListPage from "./pages/Admin/AdminPlacesPage/AdminPlacesPage";
@@ -30,6 +31,7 @@ function App() {
                 <Route path="/emergency" element={<EmergencyPage />} />
                 <Route path="/women" element={<WomensCornerPage />} />
                 <Route path="/food" element={<FoodPage />} />
+                <Route path="/events" element={<EventsPage />} />
                 <Route path="/hiking" element={<HikingMapPage />} />
                 <Route path="/admin" element={<AdminLoginPage />} />
                 <Route path="/admin/places" element={<AdminPlacesListPage />} />
