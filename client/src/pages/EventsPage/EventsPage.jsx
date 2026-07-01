@@ -7,6 +7,7 @@ const EVENTS = [
         date: "21 March 2026",
         location: "Nationwide — main celebrations in Bishkek & Osh",
         category: "Cultural",
+        icon: "🌸",
         meaning: "Nowruz (meaning 'new day') is the ancient Persian new year celebrated on the spring equinox. In Kyrgyzstan it is one of the biggest national holidays — families gather outdoors, traditional foods like sumalak are prepared, horse games are held, and music fills public squares. It is a UNESCO Intangible Cultural Heritage celebration and a perfect first glimpse into Kyrgyz culture.",
         ticketUrl: null,
         ticketLabel: null,
@@ -18,6 +19,7 @@ const EVENTS = [
         date: "Summer / Autumn 2026 — check official site for confirmed dates",
         location: "Kyrgyzstan (previous editions: Cholpon-Ata, Issyk-Kul)",
         category: "International Games",
+        icon: "🏇",
         meaning: "The World Nomad Games is the world's largest event dedicated to nomadic sports and culture. Athletes from over 80 countries compete in traditional disciplines including kok-boru (horse polo with a goat carcass), at chabysh (horse racing), eagle hunting, and wrestling. The cultural programme includes a massive ethno-village with yurts, crafts, music, and cuisine from nomadic civilisations across Asia. For any visitor to Kyrgyzstan, this is a once-in-a-lifetime spectacle.",
         ticketUrl: "https://worldnomadgames.org/en/tickets/",
         ticketLabel: "Buy Tickets — Official Site",
@@ -29,6 +31,7 @@ const EVENTS = [
         date: "June – August 2026",
         location: "Cholpon-Ata, Bosteri & south shore — Issyk-Kul Lake",
         category: "Tourism Season",
+        icon: "🏖️",
         meaning: "Issyk-Kul, the world's second-largest alpine lake, comes alive each summer with festivals, beach events, and open-air concerts along its shores. The water stays warm despite the high altitude (1,607m), and resorts host everything from folk music evenings to paragliding competitions. The resort opening in early June is marked with concerts and fireworks in Cholpon-Ata.",
         ticketUrl: null,
         ticketLabel: null,
@@ -40,6 +43,7 @@ const EVENTS = [
         date: "July 2026 (dates TBC — check Osh city portal)",
         location: "Osh — Sulayman Mountain & Old City Bazaar",
         category: "Cultural",
+        icon: "🏛️",
         meaning: "Osh is one of Central Asia's oldest cities and a historic hub of the ancient Silk Road. The annual Silk Road Festival transforms the city with traditional music, dance performances, craft markets, and tastings of Fergana Valley cuisine. Held at the foot of UNESCO-listed Sulayman Mountain, it draws visitors from across the region and is an unmissable stop for culture-focused travellers.",
         ticketUrl: null,
         ticketLabel: null,
@@ -51,6 +55,7 @@ const EVENTS = [
         date: "August 2026 — multiple locations",
         location: "Song-Köl plateau, Kochkor & regional venues",
         category: "Sport & Tradition",
+        icon: "🐎",
         meaning: "Horse sports are at the heart of Kyrgyz nomadic identity. Summer festivals across the country feature kok-boru (team horse polo), ulak tartish (goat grabbing), at chabysh (long-distance racing), and er enish (wrestling on horseback). The Song-Köl plateau at 3,016m provides the most dramatic setting — riders compete against a backdrop of alpine steppe and nomadic yurt camps. These festivals are open to spectators and free to attend.",
         ticketUrl: null,
         ticketLabel: null,
@@ -62,6 +67,7 @@ const EVENTS = [
         date: "31 August 2026",
         location: "Bishkek — Ala-Too Square",
         category: "National Holiday",
+        icon: "🎆",
         meaning: "Kyrgyzstan declared independence from the Soviet Union on 31 August 1991. The national day is marked with a military parade on Ala-Too Square in Bishkek, traditional concerts, fireworks, and city-wide festivities. The day is a proud celebration of Kyrgyz sovereignty and identity — flags fly across the country and locals gather in parks and public spaces. A great day to be in Bishkek.",
         ticketUrl: null,
         ticketLabel: null,
@@ -117,6 +123,15 @@ export default function EventsPage() {
                         </div>
 
                         <p className={styles.meaning}>{event.meaning}</p>
+
+                        <div className={styles.iconRow}>
+                            <span
+                                className={styles.eventIcon}
+                                style={{ background: CATEGORY_COLORS[event.category] || "#1A3A6B" }}
+                            >
+                                {event.icon}
+                            </span>
+                        </div>
 
                         {event.ticketUrl && (
                             <a
