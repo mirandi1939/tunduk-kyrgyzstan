@@ -43,16 +43,24 @@
     background: var(--surface);
     border: 1px solid var(--border);
     border-radius: var(--radius-lg);
-    padding: 28px;
+    padding: 0;
     box-shadow: var(--shadow);
     display: flex;
     flex-direction: column;
-    gap: 14px;
+    overflow: hidden;
     transition: box-shadow 0.2s;
 }
 
 .card:hover {
     box-shadow: var(--shadow-md);
+}
+
+.cardBody {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    flex: 1;
 }
 
 .cardTop {
@@ -121,8 +129,8 @@
     width: 100%;
     height: 200px;
     object-fit: cover;
-    border-radius: var(--radius);
-    margin-top: 4px;
+    display: block;
+    flex-shrink: 0;
 }
 
 .ticketBtn {

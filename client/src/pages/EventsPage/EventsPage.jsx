@@ -99,6 +99,15 @@ export default function EventsPage() {
             <div className={styles.grid}>
                 {EVENTS.map(event => (
                     <div key={event.id} className={styles.card}>
+                        {event.image && (
+                            <img
+                                src={`${process.env.REACT_APP_API_URL || "http://localhost:5001"}${event.image}`}
+                                alt={event.name}
+                                className={styles.eventImg}
+                            />
+                        )}
+
+                        <div className={styles.cardBody}>
                         <div className={styles.cardTop}>
                             <span
                                 className={styles.category}
@@ -124,14 +133,6 @@ export default function EventsPage() {
 
                         <p className={styles.meaning}>{event.meaning}</p>
 
-                        {event.image && (
-                            <img
-                                src={`${process.env.REACT_APP_API_URL || "http://localhost:5001"}${event.image}`}
-                                alt={event.name}
-                                className={styles.eventImg}
-                            />
-                        )}
-
                         {event.ticketUrl && (
                             <a
                                 href={event.ticketUrl}
@@ -142,6 +143,7 @@ export default function EventsPage() {
                                 🎟 {event.ticketLabel}
                             </a>
                         )}
+                        </div>
                     </div>
                 ))}
             </div>
