@@ -108,7 +108,7 @@ export default function EventsPage() {
                         )}
 
                         <div className={styles.cardBody}>
-                        <div className={styles.cardTop}>
+                            <div className={styles.cardTop}>
                             <span
                                 className={styles.category}
                                 style={{ background: CATEGORY_COLORS[event.category] || "#1A3A6B" }}
