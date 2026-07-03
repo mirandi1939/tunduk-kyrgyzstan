@@ -47,7 +47,16 @@
     font-weight: 600;
     white-space: nowrap;
 }
-.womenBadge { font-size: 1.1rem; }
+.womenBadge {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #be185d;
+    background: #fce7f3;
+    border: 1px solid #fbcfe8;
+    padding: 3px 10px;
+    border-radius: 12px;
+    white-space: nowrap;
+}
 .rating { font-size: 0.92rem; font-weight: 600; color: var(--text); }
 .rating span { font-weight: 400; color: var(--text-muted); }
 .desc { font-size: 0.87rem; color: var(--text-muted); line-height: 1.6; margin: 0; flex: 1; }
