@@ -246,6 +246,10 @@ db.serialize(() => {
         protocols.forEach(p => db.run(`INSERT INTO emergency_protocols (region,title,category,description,phone_number,steps,priority) VALUES (?,?,?,?,?,?,?)`, p));
     });
 
+    db.run(`UPDATE emergency_protocols SET steps = ? WHERE title = 'Embassy Contacts'`,
+        ['["Swiss Embassy (via Kazakhstan): +7 727 258 2600","US Embassy Bishkek: +996 312 551 241 (24hr emergency line)","UK Embassy Bishkek: +996 312 303 037","German Embassy Bishkek: +996 312 905 000","French Embassy Bishkek: +996 312 623 402","Lost passport: contact embassy immediately for emergency travel document","Allow 2–5 working days for emergency passport processing"]']
+    );
+
     // ── Women's Info ──────────────────────────────────────────────────────────
     db.get("SELECT COUNT(*) as c FROM womens_info", (err, row) => {
         if (err || row.c > 0) return;
